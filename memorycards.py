@@ -38,7 +38,7 @@ def check_match():
             buttons[idx]['highlightthickness'] = 5
             matched.append(idx)
         if len(matched) == 12:
-            messagebox.showinfo('Memory', 'Du har segrat!')
+            root.after(200, lambda: messagebox.showinfo('Memory', 'Du har segrat!'))
     else:
         # När användare inte hittar par
         for idx, _ in flipped:
