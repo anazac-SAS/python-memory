@@ -4,6 +4,7 @@ import random
 
 root = tk.Tk()
 root.title('Memory')
+root.configure(bg="#320909")
 
 # Skapa 6 par (12 kort)
 cards = list(range(1, 7)) * 2
